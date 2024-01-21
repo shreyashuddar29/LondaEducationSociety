@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg">
+    <div id="blur">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Academics
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="academics.html">Committee Members</a></li>
+                                    <li><a class="dropdown-item" href="academics.html#fl">Faculty</a></li>
+                                    <li><a class="dropdown-item" href="academics.html#tt">School Timings</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Student Corner
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="events.html">Events</a></li>
+                                    <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contact.html">Contacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <span id="google_element"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <nav class="navbar-about">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <span class="title-about">Contact Details</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="contact-main">
+                <div class="container-fluid contact">
+                    <div class="con-list"><img src="Icons/telephone.svg" alt="">+91 9008357559</div>
+                    <div class="con-list"><img src="Icons/envelope.svg" alt="">londaeducationsociety@gmail.com</div>
+                    <div class="con-list"><img src="Icons/geo-alt.svg" alt="">Londa English Medium High School, Londa,
+                        Tal:Khanapur, Dist:Belagavi-591301</div>
+                    <div class="con-list map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1103.0111445550845!2d74.48738607319682!3d15.445519159038493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf10c5fa9ea6c5%3A0x7825993d81ff4b55!2sLonda%20High%20School!5e0!3m2!1sen!2sin!4v1705721470565!5m2!1sen!2sin"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!-- <div class="d-quote">"It's not how much we give, but how much love we put into giving."</div>
+                        <button class="con-list donate" onclick="donate()">Donate</button> -->
+                </div>
+
+                <div class="d-flex">
+                    <div class="vr"></div>
+                </div>
+                <div class="container-fluid contact-form">
+                    <form name="submit-to-google-sheet">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td class="label"><label for="name">Name:</label></td>
+                                <td><input type="text" name="Name" class="form-item" placeholder="Enter name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email:</label></td>
+                                <td><input type="email" name="Email" class="form-item" placeholder="Enter email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="Phone">Phone:</label></td>
+                                <td><input type="tel" name="Phone" class="form-item" placeholder="Enter mobile number">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="address">Address:</label></td>
+                                <td><input type="text" name="Address" class="form-item"
+                                        placeholder="Enter home address"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="feedback">Feedback:</label></td>
+                                <td><textarea name="Feedback" class="feedback" placeholder="Enter your feedback"
+                                        rows="50"></textarea></td>
+                            </tr>
+                        </table>
+                        <div>
+                            <button type="submit" class="submit">Submit</button>
+                        </div>
+                        <span id="msg"></span>
+                    </form>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="d-quote">"It's not how much we give, but how much love we put into giving."</div>
+                <button class="con-list donate" onclick="donate()">Donate</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Copyright &copy; 2024, Londa Education Society</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbygil44DiP3eLB7E1bY6TpQbTv2Mmn3YjGH2syAdluTqO_wiytfwQH3QJLKTSnLWl5d/exec"
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
