@@ -24,6 +24,9 @@ function donate() {
         <div>Scan To Donate</div>
         <div><img src="Icons/QRcode.png" class="i" alt=""></div>
     </div>
+    <div>
+        <a href="https://forms.gle/yzLe8eSLnH58Nyns6" target="_blank"><button class="done">Done</button></a>
+    </div>
 </div>`
     document.body.append(donate_card)
 }
